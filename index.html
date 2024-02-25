@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <script src="emical.js"></script>
+    <link rel="stylesheet" href="emical.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Loan EMI Calculator</h1>
+
+        <div>
+            <label for="loan">Loan amount(Rs)</label><br>
+            <input type="text" id="loan" onkeyup="emi()">
+        </div>
+        
+        <div class="l2">
+            <label for="int" >Annual Interest Rate(%)</label><br><br>
+            <input type="text" id="int" onkeyup="emi()">
+        </div>
+        
+        <div class="l3">
+            <label for="year">Tenure(Years)</label><br><br>
+            <input type="text" id="year" onkeyup="emi()">
+        </div>
+       
+        <div class="outputs">
+            <div id="o1"></div><br>
+            <div id="o2"></div><br>
+            <div id="o3"></div><br>
+            <div id="o4"></div><br>
+        </div>
+    </div>    
+</body>
+</html>
